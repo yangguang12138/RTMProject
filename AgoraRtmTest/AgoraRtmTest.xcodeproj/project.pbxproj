@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		923D722122F5675300941566 /* WUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 923D722022F5675300941566 /* WUserManager.m */; };
+		923D722422F5750300941566 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923D722322F5750300941566 /* MainTabBarController.m */; };
+		923D722722F5796F00941566 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923D722622F5796F00941566 /* MineViewController.m */; };
+		923D722A22F5B8E800941566 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923D722922F5B8E800941566 /* ChannelViewController.m */; };
+		923D722D22F5C90700941566 /* ChannelMembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923D722C22F5C90700941566 /* ChannelMembersViewController.m */; };
+		923D723122F5D4EF00941566 /* AgoraRtmKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923D723022F5D4EF00941566 /* AgoraRtmKit.framework */; };
+		92D36A3C22F4130900E60D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A3B22F4130900E60D11 /* AppDelegate.m */; };
+		92D36A3F22F4130900E60D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A3E22F4130900E60D11 /* ViewController.m */; };
+		92D36A4222F4130900E60D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A4022F4130900E60D11 /* Main.storyboard */; };
+		92D36A4422F4131600E60D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A4322F4131600E60D11 /* Assets.xcassets */; };
+		92D36A4722F4131700E60D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A4522F4131700E60D11 /* LaunchScreen.storyboard */; };
+		92D36A4A22F4131700E60D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A4922F4131700E60D11 /* main.m */; };
+		92D36A5422F4131700E60D11 /* AgoraRtmTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A5322F4131700E60D11 /* AgoraRtmTestTests.m */; };
+		92D36A5F22F4131700E60D11 /* AgoraRtmTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A5E22F4131700E60D11 /* AgoraRtmTestUITests.m */; };
+		92D36A7022F413F200E60D11 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D36A6F22F413F200E60D11 /* libc++.tbd */; };
+		92D36A7222F413FE00E60D11 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D36A7122F413FE00E60D11 /* libresolv.tbd */; };
+		92D36A7422F4140D00E60D11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D36A7322F4140C00E60D11 /* SystemConfiguration.framework */; };
+		92D36A7622F4141C00E60D11 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D36A7522F4141C00E60D11 /* CoreTelephony.framework */; };
+		92D36A8922F4230500E60D11 /* whtoast_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A7D22F4230500E60D11 /* whtoast_success.png */; };
+		92D36A8A22F4230500E60D11 /* whtoast_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A7E22F4230500E60D11 /* whtoast_success@2x.png */; };
+		92D36A8B22F4230500E60D11 /* whtoast_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A7F22F4230500E60D11 /* whtoast_success@3x.png */; };
+		92D36A8C22F4230500E60D11 /* whtoast_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A8022F4230500E60D11 /* whtoast_error.png */; };
+		92D36A8D22F4230500E60D11 /* whtoast_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A8122F4230500E60D11 /* whtoast_error@2x.png */; };
+		92D36A8E22F4230500E60D11 /* whtoast_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D36A8222F4230500E60D11 /* whtoast_error@3x.png */; };
+		92D36A8F22F4230500E60D11 /* WHToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A8622F4230500E60D11 /* WHToastConfig.m */; };
+		92D36A9022F4230500E60D11 /* WHToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A8722F4230500E60D11 /* WHToastView.m */; };
+		92D36A9122F4230500E60D11 /* WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A8822F4230500E60D11 /* WHToast.m */; };
+		92D36A9422F425E200E60D11 /* ChatPeerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A9322F425E200E60D11 /* ChatPeerViewController.m */; };
+		92D36A9722F434BC00E60D11 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A9622F434BC00E60D11 /* ChatViewController.m */; };
+		92D36A9A22F4459C00E60D11 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A9922F4459C00E60D11 /* MessageCell.m */; };
+		92D36AB522F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36A9D22F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		92D36AB622F446F700E60D11 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AA622F446F700E60D11 /* ViewController+MASAdditions.m */; };
+		92D36AB722F446F700E60D11 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AAA22F446F700E60D11 /* MASCompositeConstraint.m */; };
+		92D36AB822F446F700E60D11 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AAB22F446F700E60D11 /* MASConstraintMaker.m */; };
+		92D36AB922F446F700E60D11 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AAC22F446F700E60D11 /* MASLayoutConstraint.m */; };
+		92D36ABA22F446F700E60D11 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AAD22F446F700E60D11 /* NSArray+MASAdditions.m */; };
+		92D36ABB22F446F700E60D11 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AAE22F446F700E60D11 /* View+MASAdditions.m */; };
+		92D36ABC22F446F700E60D11 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AB122F446F700E60D11 /* MASConstraint.m */; };
+		92D36ABD22F446F700E60D11 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AB322F446F700E60D11 /* MASViewConstraint.m */; };
+		92D36ABE22F446F700E60D11 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AB422F446F700E60D11 /* MASViewAttribute.m */; };
+		92D36AC122F4790000E60D11 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D36AC022F4790000E60D11 /* Message.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92D36A5022F4131700E60D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92D36A2F22F4130900E60D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D36A3622F4130900E60D11;
+			remoteInfo = AgoraRtmTest;
+		};
+		92D36A5B22F4131700E60D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92D36A2F22F4130900E60D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D36A3622F4130900E60D11;
+			remoteInfo = AgoraRtmTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		923D721F22F5675300941566 /* WUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUserManager.h; sourceTree = "<group>"; };
+		923D722022F5675300941566 /* WUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUserManager.m; sourceTree = "<group>"; };
+		923D722222F5750300941566 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		923D722322F5750300941566 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		923D722522F5796F00941566 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		923D722622F5796F00941566 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		923D722822F5B8E700941566 /* ChannelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
+		923D722922F5B8E800941566 /* ChannelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
+		923D722B22F5C90700941566 /* ChannelMembersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelMembersViewController.h; sourceTree = "<group>"; };
+		923D722C22F5C90700941566 /* ChannelMembersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelMembersViewController.m; sourceTree = "<group>"; };
+		923D723022F5D4EF00941566 /* AgoraRtmKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtmKit.framework; sourceTree = "<group>"; };
+		92D36A3722F4130900E60D11 /* AgoraRtmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraRtmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D36A3A22F4130900E60D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		92D36A3B22F4130900E60D11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		92D36A3D22F4130900E60D11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		92D36A3E22F4130900E60D11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		92D36A4122F4130900E60D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92D36A4322F4131600E60D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92D36A4622F4131700E60D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92D36A4822F4131700E60D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D36A4922F4131700E60D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92D36A4F22F4131700E60D11 /* AgoraRtmTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoraRtmTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D36A5322F4131700E60D11 /* AgoraRtmTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgoraRtmTestTests.m; sourceTree = "<group>"; };
+		92D36A5522F4131700E60D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D36A5A22F4131700E60D11 /* AgoraRtmTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoraRtmTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D36A5E22F4131700E60D11 /* AgoraRtmTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgoraRtmTestUITests.m; sourceTree = "<group>"; };
+		92D36A6022F4131700E60D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D36A6F22F413F200E60D11 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		92D36A7122F413FE00E60D11 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		92D36A7322F4140C00E60D11 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92D36A7522F4141C00E60D11 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		92D36A7722F4162A00E60D11 /* AgoraRtmConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgoraRtmConfig.h; sourceTree = "<group>"; };
+		92D36A7D22F4230500E60D11 /* whtoast_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whtoast_success.png; sourceTree = "<group>"; };
+		92D36A7E22F4230500E60D11 /* whtoast_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_success@2x.png"; sourceTree = "<group>"; };
+		92D36A7F22F4230500E60D11 /* whtoast_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_success@3x.png"; sourceTree = "<group>"; };
+		92D36A8022F4230500E60D11 /* whtoast_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whtoast_error.png; sourceTree = "<group>"; };
+		92D36A8122F4230500E60D11 /* whtoast_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_error@2x.png"; sourceTree = "<group>"; };
+		92D36A8222F4230500E60D11 /* whtoast_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_error@3x.png"; sourceTree = "<group>"; };
+		92D36A8322F4230500E60D11 /* WHToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToastView.h; sourceTree = "<group>"; };
+		92D36A8422F4230500E60D11 /* WHToastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToastConfig.h; sourceTree = "<group>"; };
+		92D36A8522F4230500E60D11 /* WHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToast.h; sourceTree = "<group>"; };
+		92D36A8622F4230500E60D11 /* WHToastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToastConfig.m; sourceTree = "<group>"; };
+		92D36A8722F4230500E60D11 /* WHToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToastView.m; sourceTree = "<group>"; };
+		92D36A8822F4230500E60D11 /* WHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToast.m; sourceTree = "<group>"; };
+		92D36A9222F425E200E60D11 /* ChatPeerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatPeerViewController.h; sourceTree = "<group>"; };
+		92D36A9322F425E200E60D11 /* ChatPeerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatPeerViewController.m; sourceTree = "<group>"; };
+		92D36A9522F434BC00E60D11 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		92D36A9622F434BC00E60D11 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		92D36A9822F4459C00E60D11 /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		92D36A9922F4459C00E60D11 /* MessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		92D36A9C22F446F700E60D11 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		92D36A9D22F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		92D36A9E22F446F700E60D11 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		92D36A9F22F446F700E60D11 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		92D36AA022F446F700E60D11 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		92D36AA122F446F700E60D11 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		92D36AA222F446F700E60D11 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		92D36AA322F446F700E60D11 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		92D36AA422F446F700E60D11 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		92D36AA522F446F700E60D11 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		92D36AA622F446F700E60D11 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		92D36AA722F446F700E60D11 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		92D36AA822F446F700E60D11 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		92D36AA922F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		92D36AAA22F446F700E60D11 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		92D36AAB22F446F700E60D11 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		92D36AAC22F446F700E60D11 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		92D36AAD22F446F700E60D11 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		92D36AAE22F446F700E60D11 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		92D36AAF22F446F700E60D11 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		92D36AB022F446F700E60D11 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		92D36AB122F446F700E60D11 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		92D36AB222F446F700E60D11 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		92D36AB322F446F700E60D11 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		92D36AB422F446F700E60D11 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		92D36ABF22F4790000E60D11 /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		92D36AC022F4790000E60D11 /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92D36A3422F4130900E60D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D36A7622F4141C00E60D11 /* CoreTelephony.framework in Frameworks */,
+				923D723122F5D4EF00941566 /* AgoraRtmKit.framework in Frameworks */,
+				92D36A7422F4140D00E60D11 /* SystemConfiguration.framework in Frameworks */,
+				92D36A7222F413FE00E60D11 /* libresolv.tbd in Frameworks */,
+				92D36A7022F413F200E60D11 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D36A4C22F4131700E60D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D36A5722F4131700E60D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		923D722F22F5D4EF00941566 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				923D723022F5D4EF00941566 /* AgoraRtmKit.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		92D36A2E22F4130900E60D11 = {
+			isa = PBXGroup;
+			children = (
+				92D36A3922F4130900E60D11 /* AgoraRtmTest */,
+				92D36A5222F4131700E60D11 /* AgoraRtmTestTests */,
+				92D36A5D22F4131700E60D11 /* AgoraRtmTestUITests */,
+				92D36A3822F4130900E60D11 /* Products */,
+				92D36A6E22F413F100E60D11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92D36A3822F4130900E60D11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A3722F4130900E60D11 /* AgoraRtmTest.app */,
+				92D36A4F22F4131700E60D11 /* AgoraRtmTestTests.xctest */,
+				92D36A5A22F4131700E60D11 /* AgoraRtmTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92D36A3922F4130900E60D11 /* AgoraRtmTest */ = {
+			isa = PBXGroup;
+			children = (
+				923D722F22F5D4EF00941566 /* libs */,
+				92D36A7A22F422DD00E60D11 /* 3rdSDK */,
+				92D36A3A22F4130900E60D11 /* AppDelegate.h */,
+				92D36A3B22F4130900E60D11 /* AppDelegate.m */,
+				92D36A3D22F4130900E60D11 /* ViewController.h */,
+				92D36A3E22F4130900E60D11 /* ViewController.m */,
+				92D36A4022F4130900E60D11 /* Main.storyboard */,
+				92D36A4322F4131600E60D11 /* Assets.xcassets */,
+				92D36A4522F4131700E60D11 /* LaunchScreen.storyboard */,
+				92D36A4822F4131700E60D11 /* Info.plist */,
+				92D36A4922F4131700E60D11 /* main.m */,
+				92D36A7722F4162A00E60D11 /* AgoraRtmConfig.h */,
+				92D36A9222F425E200E60D11 /* ChatPeerViewController.h */,
+				92D36A9322F425E200E60D11 /* ChatPeerViewController.m */,
+				92D36A9522F434BC00E60D11 /* ChatViewController.h */,
+				92D36A9622F434BC00E60D11 /* ChatViewController.m */,
+				92D36A9822F4459C00E60D11 /* MessageCell.h */,
+				92D36A9922F4459C00E60D11 /* MessageCell.m */,
+				92D36ABF22F4790000E60D11 /* Message.h */,
+				92D36AC022F4790000E60D11 /* Message.m */,
+				923D721F22F5675300941566 /* WUserManager.h */,
+				923D722022F5675300941566 /* WUserManager.m */,
+				923D722222F5750300941566 /* MainTabBarController.h */,
+				923D722322F5750300941566 /* MainTabBarController.m */,
+				923D722522F5796F00941566 /* MineViewController.h */,
+				923D722622F5796F00941566 /* MineViewController.m */,
+				923D722822F5B8E700941566 /* ChannelViewController.h */,
+				923D722922F5B8E800941566 /* ChannelViewController.m */,
+				923D722B22F5C90700941566 /* ChannelMembersViewController.h */,
+				923D722C22F5C90700941566 /* ChannelMembersViewController.m */,
+			);
+			path = AgoraRtmTest;
+			sourceTree = "<group>";
+		};
+		92D36A5222F4131700E60D11 /* AgoraRtmTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A5322F4131700E60D11 /* AgoraRtmTestTests.m */,
+				92D36A5522F4131700E60D11 /* Info.plist */,
+			);
+			path = AgoraRtmTestTests;
+			sourceTree = "<group>";
+		};
+		92D36A5D22F4131700E60D11 /* AgoraRtmTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A5E22F4131700E60D11 /* AgoraRtmTestUITests.m */,
+				92D36A6022F4131700E60D11 /* Info.plist */,
+			);
+			path = AgoraRtmTestUITests;
+			sourceTree = "<group>";
+		};
+		92D36A6E22F413F100E60D11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A7522F4141C00E60D11 /* CoreTelephony.framework */,
+				92D36A7322F4140C00E60D11 /* SystemConfiguration.framework */,
+				92D36A7122F413FE00E60D11 /* libresolv.tbd */,
+				92D36A6F22F413F200E60D11 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92D36A7A22F422DD00E60D11 /* 3rdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A9B22F446F700E60D11 /* Masonry */,
+				92D36A7B22F4230400E60D11 /* WHToast */,
+			);
+			path = 3rdSDK;
+			sourceTree = "<group>";
+		};
+		92D36A7B22F4230400E60D11 /* WHToast */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A7C22F4230500E60D11 /* wtoast_icon */,
+				92D36A8322F4230500E60D11 /* WHToastView.h */,
+				92D36A8422F4230500E60D11 /* WHToastConfig.h */,
+				92D36A8522F4230500E60D11 /* WHToast.h */,
+				92D36A8622F4230500E60D11 /* WHToastConfig.m */,
+				92D36A8722F4230500E60D11 /* WHToastView.m */,
+				92D36A8822F4230500E60D11 /* WHToast.m */,
+			);
+			path = WHToast;
+			sourceTree = "<group>";
+		};
+		92D36A7C22F4230500E60D11 /* wtoast_icon */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A7D22F4230500E60D11 /* whtoast_success.png */,
+				92D36A7E22F4230500E60D11 /* whtoast_success@2x.png */,
+				92D36A7F22F4230500E60D11 /* whtoast_success@3x.png */,
+				92D36A8022F4230500E60D11 /* whtoast_error.png */,
+				92D36A8122F4230500E60D11 /* whtoast_error@2x.png */,
+				92D36A8222F4230500E60D11 /* whtoast_error@3x.png */,
+			);
+			path = wtoast_icon;
+			sourceTree = "<group>";
+		};
+		92D36A9B22F446F700E60D11 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				92D36A9C22F446F700E60D11 /* MASCompositeConstraint.h */,
+				92D36A9D22F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				92D36A9E22F446F700E60D11 /* MASConstraint+Private.h */,
+				92D36A9F22F446F700E60D11 /* MASLayoutConstraint.h */,
+				92D36AA022F446F700E60D11 /* NSArray+MASShorthandAdditions.h */,
+				92D36AA122F446F700E60D11 /* MASConstraintMaker.h */,
+				92D36AA222F446F700E60D11 /* View+MASAdditions.h */,
+				92D36AA322F446F700E60D11 /* NSArray+MASAdditions.h */,
+				92D36AA422F446F700E60D11 /* MASUtilities.h */,
+				92D36AA522F446F700E60D11 /* MASViewAttribute.h */,
+				92D36AA622F446F700E60D11 /* ViewController+MASAdditions.m */,
+				92D36AA722F446F700E60D11 /* MASViewConstraint.h */,
+				92D36AA822F446F700E60D11 /* MASConstraint.h */,
+				92D36AA922F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				92D36AAA22F446F700E60D11 /* MASCompositeConstraint.m */,
+				92D36AAB22F446F700E60D11 /* MASConstraintMaker.m */,
+				92D36AAC22F446F700E60D11 /* MASLayoutConstraint.m */,
+				92D36AAD22F446F700E60D11 /* NSArray+MASAdditions.m */,
+				92D36AAE22F446F700E60D11 /* View+MASAdditions.m */,
+				92D36AAF22F446F700E60D11 /* View+MASShorthandAdditions.h */,
+				92D36AB022F446F700E60D11 /* Masonry.h */,
+				92D36AB122F446F700E60D11 /* MASConstraint.m */,
+				92D36AB222F446F700E60D11 /* ViewController+MASAdditions.h */,
+				92D36AB322F446F700E60D11 /* MASViewConstraint.m */,
+				92D36AB422F446F700E60D11 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92D36A3622F4130900E60D11 /* AgoraRtmTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D36A6322F4131700E60D11 /* Build configuration list for PBXNativeTarget "AgoraRtmTest" */;
+			buildPhases = (
+				92D36A3322F4130900E60D11 /* Sources */,
+				92D36A3422F4130900E60D11 /* Frameworks */,
+				92D36A3522F4130900E60D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgoraRtmTest;
+			productName = AgoraRtmTest;
+			productReference = 92D36A3722F4130900E60D11 /* AgoraRtmTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92D36A4E22F4131700E60D11 /* AgoraRtmTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D36A6622F4131700E60D11 /* Build configuration list for PBXNativeTarget "AgoraRtmTestTests" */;
+			buildPhases = (
+				92D36A4B22F4131700E60D11 /* Sources */,
+				92D36A4C22F4131700E60D11 /* Frameworks */,
+				92D36A4D22F4131700E60D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92D36A5122F4131700E60D11 /* PBXTargetDependency */,
+			);
+			name = AgoraRtmTestTests;
+			productName = AgoraRtmTestTests;
+			productReference = 92D36A4F22F4131700E60D11 /* AgoraRtmTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92D36A5922F4131700E60D11 /* AgoraRtmTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D36A6922F4131700E60D11 /* Build configuration list for PBXNativeTarget "AgoraRtmTestUITests" */;
+			buildPhases = (
+				92D36A5622F4131700E60D11 /* Sources */,
+				92D36A5722F4131700E60D11 /* Frameworks */,
+				92D36A5822F4131700E60D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92D36A5C22F4131700E60D11 /* PBXTargetDependency */,
+			);
+			name = AgoraRtmTestUITests;
+			productName = AgoraRtmTestUITests;
+			productReference = 92D36A5A22F4131700E60D11 /* AgoraRtmTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92D36A2F22F4130900E60D11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = shy;
+				TargetAttributes = {
+					92D36A3622F4130900E60D11 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					92D36A4E22F4131700E60D11 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 92D36A3622F4130900E60D11;
+					};
+					92D36A5922F4131700E60D11 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 92D36A3622F4130900E60D11;
+					};
+				};
+			};
+			buildConfigurationList = 92D36A3222F4130900E60D11 /* Build configuration list for PBXProject "AgoraRtmTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92D36A2E22F4130900E60D11;
+			productRefGroup = 92D36A3822F4130900E60D11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92D36A3622F4130900E60D11 /* AgoraRtmTest */,
+				92D36A4E22F4131700E60D11 /* AgoraRtmTestTests */,
+				92D36A5922F4131700E60D11 /* AgoraRtmTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92D36A3522F4130900E60D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D36A8922F4230500E60D11 /* whtoast_success.png in Resources */,
+				92D36A8E22F4230500E60D11 /* whtoast_error@3x.png in Resources */,
+				92D36A4722F4131700E60D11 /* LaunchScreen.storyboard in Resources */,
+				92D36A8B22F4230500E60D11 /* whtoast_success@3x.png in Resources */,
+				92D36A8C22F4230500E60D11 /* whtoast_error.png in Resources */,
+				92D36A8D22F4230500E60D11 /* whtoast_error@2x.png in Resources */,
+				92D36A8A22F4230500E60D11 /* whtoast_success@2x.png in Resources */,
+				92D36A4422F4131600E60D11 /* Assets.xcassets in Resources */,
+				92D36A4222F4130900E60D11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D36A4D22F4131700E60D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D36A5822F4131700E60D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92D36A3322F4130900E60D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D36A3F22F4130900E60D11 /* ViewController.m in Sources */,
+				92D36A9022F4230500E60D11 /* WHToastView.m in Sources */,
+				92D36ABA22F446F700E60D11 /* NSArray+MASAdditions.m in Sources */,
+				92D36A4A22F4131700E60D11 /* main.m in Sources */,
+				92D36ABB22F446F700E60D11 /* View+MASAdditions.m in Sources */,
+				92D36AB522F446F700E60D11 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				92D36AB722F446F700E60D11 /* MASCompositeConstraint.m in Sources */,
+				92D36A8F22F4230500E60D11 /* WHToastConfig.m in Sources */,
+				92D36AB622F446F700E60D11 /* ViewController+MASAdditions.m in Sources */,
+				923D722722F5796F00941566 /* MineViewController.m in Sources */,
+				92D36ABE22F446F700E60D11 /* MASViewAttribute.m in Sources */,
+				92D36ABD22F446F700E60D11 /* MASViewConstraint.m in Sources */,
+				92D36A9122F4230500E60D11 /* WHToast.m in Sources */,
+				92D36AB822F446F700E60D11 /* MASConstraintMaker.m in Sources */,
+				92D36A9422F425E200E60D11 /* ChatPeerViewController.m in Sources */,
+				923D722122F5675300941566 /* WUserManager.m in Sources */,
+				92D36AB922F446F700E60D11 /* MASLayoutConstraint.m in Sources */,
+				923D722422F5750300941566 /* MainTabBarController.m in Sources */,
+				923D722A22F5B8E800941566 /* ChannelViewController.m in Sources */,
+				92D36A9A22F4459C00E60D11 /* MessageCell.m in Sources */,
+				92D36A9722F434BC00E60D11 /* ChatViewController.m in Sources */,
+				92D36AC122F4790000E60D11 /* Message.m in Sources */,
+				92D36ABC22F446F700E60D11 /* MASConstraint.m in Sources */,
+				92D36A3C22F4130900E60D11 /* AppDelegate.m in Sources */,
+				923D722D22F5C90700941566 /* ChannelMembersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D36A4B22F4131700E60D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D36A5422F4131700E60D11 /* AgoraRtmTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D36A5622F4131700E60D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D36A5F22F4131700E60D11 /* AgoraRtmTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92D36A5122F4131700E60D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D36A3622F4130900E60D11 /* AgoraRtmTest */;
+			targetProxy = 92D36A5022F4131700E60D11 /* PBXContainerItemProxy */;
+		};
+		92D36A5C22F4131700E60D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D36A3622F4130900E60D11 /* AgoraRtmTest */;
+			targetProxy = 92D36A5B22F4131700E60D11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92D36A4022F4130900E60D11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92D36A4122F4130900E60D11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92D36A4522F4131700E60D11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92D36A4622F4131700E60D11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92D36A6122F4131700E60D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92D36A6222F4131700E60D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92D36A6422F4131700E60D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2T725MPDN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AgoraRtmTest/libs",
+				);
+				INFOPLIST_FILE = AgoraRtmTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nimkit.com.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		92D36A6522F4131700E60D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2T725MPDN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AgoraRtmTest/libs",
+				);
+				INFOPLIST_FILE = AgoraRtmTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nimkit.com.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		92D36A6722F4131700E60D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgoraRtmTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.test.AgoraRtmTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgoraRtmTest.app/AgoraRtmTest";
+			};
+			name = Debug;
+		};
+		92D36A6822F4131700E60D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgoraRtmTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.test.AgoraRtmTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgoraRtmTest.app/AgoraRtmTest";
+			};
+			name = Release;
+		};
+		92D36A6A22F4131700E60D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgoraRtmTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.test.AgoraRtmTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgoraRtmTest;
+			};
+			name = Debug;
+		};
+		92D36A6B22F4131700E60D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AgoraRtmTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.test.AgoraRtmTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgoraRtmTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92D36A3222F4130900E60D11 /* Build configuration list for PBXProject "AgoraRtmTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D36A6122F4131700E60D11 /* Debug */,
+				92D36A6222F4131700E60D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D36A6322F4131700E60D11 /* Build configuration list for PBXNativeTarget "AgoraRtmTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D36A6422F4131700E60D11 /* Debug */,
+				92D36A6522F4131700E60D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D36A6622F4131700E60D11 /* Build configuration list for PBXNativeTarget "AgoraRtmTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D36A6722F4131700E60D11 /* Debug */,
+				92D36A6822F4131700E60D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D36A6922F4131700E60D11 /* Build configuration list for PBXNativeTarget "AgoraRtmTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D36A6A22F4131700E60D11 /* Debug */,
+				92D36A6B22F4131700E60D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92D36A2F22F4130900E60D11 /* Project object */;
+}
